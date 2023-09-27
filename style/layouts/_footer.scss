@@ -1,0 +1,16 @@
+$cor-cinza: #333;
+$cor-branca: #fff;
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $cor-cinza;
+    height: 150px;
+    margin-top: 2em;
+    color: $cor-branca;
+
+    & span {
+        font-weight: bold;
+    }
+}

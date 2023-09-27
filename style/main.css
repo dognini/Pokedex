@@ -1,0 +1,291 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.main-container {
+  min-height: 75vh;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  height: 150px;
+  margin-top: 2em;
+  color: #fff;
+}
+.footer span {
+  font-weight: bold;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1.2em;
+  margin-bottom: 2em;
+  background-color: #333;
+  color: #fff;
+}
+.navBar .navBar__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navBar .navBar__logo h1 {
+  margin-left: 0.5em;
+  color: #fff;
+}
+.navBar .navBar__link-itens {
+  display: flex;
+  list-style: none;
+}
+.navBar .navBar__link-itens li {
+  margin-right: 1.3em;
+}
+.navBar .navBar__link-itens li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  transition: 0.4s;
+  border-bottom: 2px solid transparent;
+}
+.navBar .navBar__link-itens li a:hover {
+  border-color: #fff;
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em 1em;
+  margin-bottom: 2em;
+  width: 23%;
+  border-radius: 1em;
+  border: 2px solid #E33D33;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+  background-color: #333;
+  color: #fff;
+}
+.card_container p {
+  margin: 1em 0;
+  background-color: #E33D33;
+  border-radius: 5px;
+  padding: 5px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card_container h3 {
+  text-transform: capitalize;
+  margin-bottom: 1em;
+  font-size: 1.4em;
+}
+.card_container a {
+  text-decoration: none;
+  background: #fff;
+  color: #333;
+  padding: 0.7em 1.2em;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.card_container a:hover {
+  background-color: #E33D33;
+  color: #fff;
+}
+
+.about {
+  text-align: center;
+}
+.about h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.about p {
+  margin-bottom: 1.5em;
+  margin: 0 auto 1.5em;
+  line-height: 1.4;
+}
+
+.title_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.title_container h1 {
+  color: #E33D33;
+  text-align: center;
+  font-size: 3em;
+  margin-right: 0.4em;
+}
+.title_container h1 span {
+  color: #333;
+}
+
+.pokemon_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.container_pokemon {
+  text-align: center;
+}
+.container_pokemon .container_pokemon_title {
+  font-size: 2.5em;
+  text-transform: capitalize;
+  background-color: #333;
+  color: #fff;
+  padding: 0.3em;
+  margin: 0.8em auto;
+  width: 300px;
+}
+.container_pokemon h3 {
+  margin: 0.6em auto;
+  font-size: 1.2em;
+}
+.container_pokemon .types_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container_pokemon .types_container .type {
+  padding: 0.6em 1em;
+  color: #fff;
+  background-color: #333;
+  margin-right: 0.5em;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+.container_pokemon .types_container .type_normal {
+  background-color: #aa9;
+}
+.container_pokemon .types_container .type_fire {
+  background-color: #f42;
+}
+.container_pokemon .types_container .type_water {
+  background-color: #39f;
+}
+.container_pokemon .types_container .type_eletric {
+  background-color: #fc3;
+}
+.container_pokemon .types_container .type_grass {
+  background-color: #7c5;
+}
+.container_pokemon .types_container .type_ice {
+  background-color: #6cf;
+}
+.container_pokemon .types_container .type_fighting {
+  background-color: #b54;
+}
+.container_pokemon .types_container .type_poison {
+  background-color: #a59;
+}
+.container_pokemon .types_container .type_ground {
+  background-color: #db5;
+}
+.container_pokemon .types_container .type_flying {
+  background-color: #89f;
+}
+.container_pokemon .types_container .type_psychic {
+  background-color: #f59;
+}
+.container_pokemon .types_container .type_bug {
+  background-color: #ab2;
+}
+.container_pokemon .types_container .type_rock {
+  background-color: #ba6;
+}
+.container_pokemon .types_container .type_ghost {
+  background-color: #66b;
+}
+.container_pokemon .types_container .type_dragon {
+  background-color: #76e;
+}
+.container_pokemon .types_container .type_dark {
+  background-color: #754;
+}
+.container_pokemon .types_container .type_steel {
+  background-color: #aab;
+}
+.container_pokemon .types_container .type_fairy {
+  background-color: #e9e;
+}
+.container_pokemon .data_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5em;
+}
+.container_pokemon .data_container div {
+  margin: 1em 0;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container_pokemon .data_container .data_height {
+  border-right: 2px solid #333;
+}/*# sourceMappingURL=main.css.map */

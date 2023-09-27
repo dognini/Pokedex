@@ -1,6 +1,5 @@
 {
-  "name": "pokedez",
-  "version": "0.1.0",
+  "name": "pokedex",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,12 +8,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "latest",
-    "react-dom": "latest",
-    "next": "latest"
+    "next": "12.0.4",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "eslint": "latest",
-    "eslint-config-next": "latest"
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.4"
   }
 }

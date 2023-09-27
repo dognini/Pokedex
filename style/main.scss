@@ -1,0 +1,13 @@
+// Base
+@import './base/reset';
+
+// Layouts
+@import './layouts/container';
+@import './layouts/footer';
+@import './layouts/navBar';
+@import './layouts/card.scss';
+
+// Pages
+@import './pages/about';
+@import './pages/home';
+@import './pages/pokemon';
