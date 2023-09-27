@@ -1,4 +1,7 @@
+import Loading from "../../components/loading.js"
 import Image from "next/image";
+
+import { useRouter } from "next/router";
 
 export const getStaticPaths = async () => {
     const maxPokemons = 150;
@@ -19,7 +22,7 @@ export const getStaticPaths = async () => {
 
     return {
         paths,
-        fallback: false,
+        fallback: true,
     }
 }
 
@@ -36,6 +39,15 @@ export const getStaticProps = async (context) => {
 }
 
 export default function PokemonId({ pokemon }) {
+
+    const router = useRouter();
+
+    if (router.isFallback) {
+        return (
+            <Loading />
+        )
+    }
+
     return (
         <div className="container_pokemon">
             <h1 className="container_pokemon_title"> {pokemon.name} </h1>

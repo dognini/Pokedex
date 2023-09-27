@@ -1,3 +1,7 @@
+$cor-vermelha: #E33D33;
+$cor-branca: #fff;
+$cor-cinza: #333;
+
 .card_container {
     display: flex;
     justify-content: center;
@@ -7,17 +11,17 @@
     margin-bottom: 2em;
     width: 23%;
     border-radius: 1em;
-    border: 2px solid #E33D33;
+    border: 2px solid $cor-vermelha;
     box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
-    background-color: #333;
-    color: #fff;
+    background-color: $cor-cinza;
+    color: $cor-branca;
 
     & p {
         margin: 1em 0;
-        background-color: #E33D33;
+        background-color: $cor-vermelha;
         border-radius: 5px;
         padding: 5px;
-        color: #fff;
+        color: $cor-branca;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -31,16 +35,16 @@
 
     & a {
         text-decoration: none;
-        background: #fff;
-        color: #333;
+        background: $cor-branca;
+        color: $cor-cinza;
         padding: .7em 1.2em;
         border-radius: 5px;
         font-weight: bold;
         transition: 0.4s;
 
         &:hover {
-            background-color: #E33D33;
-            color: #fff;
+            background-color: $cor-vermelha;
+            color: $cor-branca;
         }
     }
 }
